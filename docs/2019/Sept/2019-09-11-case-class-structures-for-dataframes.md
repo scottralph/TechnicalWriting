@@ -7,7 +7,7 @@ val schema = StructType (StructField("foo", StringType, true))
 
 The problem I ran across is when I wanted a nested structure for one of the columns, and one of those entries had an array.
 Additionally, I was constructing the data for the DataFrame by taking an existing DataFrame, accessing the RDD, and mapping it to a new nested structure.
-"That's easy, I though", and I just tried to author a nested structure:
+"That's easy, I thought", and I just tried to author a nested structure:
 ```scala
 val schema =  StructType(
   List(
@@ -77,4 +77,4 @@ root
  |    |    |-- endTime: string (nullable = true)
 ```
 
-It is unfortunate that the method has to be passed an additional argument for the Spark Session, in order to import the implicit methods, but all that extra work someone did to get schema of nested structures can now be easily leveraged, and so it is worth the small aesthetic flaw. 
+It is unfortunate that the method has to be passed an additional argument for the Spark Session, in order to import the implicit methods, but all that extra work someone did to get schema of nested structures can now be easily leveraged, and so it is worth the small aesthetic flaw.
