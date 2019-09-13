@@ -78,3 +78,5 @@ root
 ```
 
 It is unfortunate that the method has to be passed an additional argument for the Spark Session, in order to import the implicit methods, but all that extra work someone did to get schema of nested structures can now be easily leveraged, and so it is worth the small aesthetic flaw.
+
+[Home](../../README.md)
