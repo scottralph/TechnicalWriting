@@ -12,7 +12,9 @@ column expression.
 
 As an example, lets create a simple example Data Frame:
 ```scala
-scala> val df = Seq((Array("cat", "hippo", "elephant"), 3),(Array("bird", "bat", "tiger"),4)).toDF("column1", "column2")
+scala> val df = Seq((Array("cat", "hippo", "elephant"), 3),
+                    (Array("bird", "bat", "tiger"),4))
+                    .toDF("column1", "column2")
 df: org.apache.spark.sql.DataFrame = [column1: array<string>, column2: int]
 
 scala> df.show()
@@ -34,10 +36,11 @@ but to my knowledge this type of functionality is not available.
 To make things easier, I would like to make a User Defined Function factory (where "UserDefinedFunction" is the Spark.SQL function that can be applied to column data fields) that takes as an argument a function to be applied to each element of the sequence
 
 ```scala
-def mapStringToLongToStringArrayUdf(func : String => Long) : UserDefinedFunction = {
-
+def mapStringToLongToStringArrayUdf(func : String => Long)
+                              : UserDefinedFunction = {
     val mapFunc : ((String => Long), WrappedArray[String]) =>
-     WrappedArray[Long] = (fn : (String => Long), elems: WrappedArray[String]) => {
+     WrappedArray[Long] = (fn : (String => Long),
+                           elems: WrappedArray[String]) => {
         elems.toIterator.map(x => fn(x)).toArray
     }
     val theArrayType = createArrayType(LongType)
