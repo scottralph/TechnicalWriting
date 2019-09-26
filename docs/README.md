@@ -9,3 +9,5 @@
 [Sept. 11, 2019, Case Classes for DataFrame Structured Columns](2019/Sept/2019-09-11-case-class-structures-for-dataframes.md)
 
 [Sept. 13, 2019, Shannon, Entropy and Beautiful Code](2019/Sept/2019-09-13-entropy.md)
+
+[Sept. 25, 2019, Mapping Functions to Array Columns in Spark SQL](2019/Sept/2019-09-25-mapping-functions-to-array-columns-in-spark-sql.md)
