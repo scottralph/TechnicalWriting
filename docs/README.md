@@ -16,4 +16,4 @@
 
 ### August
 
-[Aug. 13, 2020, A Simple Python Script for Debugging bulk JSON files] (2020/Aug/2020-Aug-13-SimplePythonForBulkJSON.md)
+[Aug. 13, 2020, A Simple Python Script for Debugging bulk JSON files](2020/Aug/2020-Aug-13-SimplePythonForBulkJSON.md)
