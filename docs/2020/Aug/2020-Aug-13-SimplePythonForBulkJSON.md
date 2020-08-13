@@ -14,7 +14,7 @@ But just one line of this JSON is very cubmersome:
 So, to make searching for particular patterns easier, I wrote a Python utility to parse each entry, and look for key-values of interest.
 Ideally I would be able to run the Python script from the command-line like a [grep](https://en.wikipedia.org/wiki/Grep) command.
 
-Here is the small script, also given [here](../../../utils/json-field-print/json-field-print.py )
+Here is the small script, also given [here](https://github.com/scottralph/TechnicalWriting/blob/master/utils/json-field-print/json-field-print.py)
 ```Python
 import json
 import sys
