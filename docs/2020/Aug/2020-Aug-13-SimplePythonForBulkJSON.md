@@ -49,11 +49,8 @@ The slightly harder part was to find *all* the AVRO files, convert each to a JSO
 # This file was named uat-207.sh in the following example, because it was a
 # specific JIRA ticket associated with the "bug"
 
-
 echo "Looking in file $1 for field $2 equal to $3"
-
 echo "Copying file locally"
-
 
 hdfs dfs -get $1 /tmp/temp.avro
 
