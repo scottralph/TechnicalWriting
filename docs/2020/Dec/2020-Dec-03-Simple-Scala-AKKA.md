@@ -51,6 +51,13 @@ case class TaskOneRequest(taskId: String) extends TaskSchedulerMessage
 case class TaskTwoRequest(taskId: String) extends TaskSchedulerMessage
 ```
 
+The line
+```
+actor ! TaskOneRequest("a-task-id")
+```
+simply sends a ***TaskOneRequest*** message.
+
+
 We take some **taskId** as a descriptor, keeping track of the outstanding tasks.
 Note that the messages are all **case classes** as they are all immutable and serializable by definition.
 
