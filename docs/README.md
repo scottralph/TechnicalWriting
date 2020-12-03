@@ -17,3 +17,6 @@
 ### August
 
 [Aug. 13, 2020, A Simple Python Script for Debugging bulk JSON files](2020/Aug/2020-Aug-13-SimplePythonForBulkJSON.md)
+
+### December
+[Dec. 3, 2020, Simple Scala AKKA ](2020/Dec/2020-Dec-03-Simple-Scala-AKKA.md)
