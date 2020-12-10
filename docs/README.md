@@ -20,3 +20,5 @@
 
 ### December
 [Dec. 3, 2020, Simple Scala AKKA ](2020/Dec/2020-Dec-03-Simple-Scala-AKKA.md)
+
+[Dec. 9, 2020, Python Helper for Chaining References](2020/Dec/2020-Dec-08-Python-Chaining-Reference.md)
