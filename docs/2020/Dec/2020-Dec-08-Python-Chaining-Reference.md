@@ -33,7 +33,9 @@ class WrappedComplexObject:
         self.dict = the_dict
 
     @staticmethod
-    def is_addressable_type(x): return isinstance(x, list) or isinstance(x, tuple)
+    def is_addressable_type(x):
+      return isinstance(x, list) or \
+             isinstance(x, tuple)
 
     def __getitem__(self, indices):
         if not isinstance(indices, tuple):
@@ -42,7 +44,8 @@ class WrappedComplexObject:
         for idx in indices:
             if current and isinstance(current, dict):
                 current = current.get(idx, None)
-            elif current and WrappedComplexObject.is_addressable_type(current) and isinstance(idx, int):
+            elif current and WrappedComplexObject.is_addressable_type(current) and \
+                 isinstance(idx, int):
                 current = current[idx] if idx < len(current) else None
             else:
                 current = None
